@@ -1,5 +1,3 @@
-![Deployement of book](../../actions/workflows/deploy-book.yml/badge.svg) [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/cascadiaquakes/jupyter-book-template/HEAD?labpath=notebooks%2F)  
-
 # SZ4D Open DAS Data for Subduction Zone Environments
 
 ## Overview
