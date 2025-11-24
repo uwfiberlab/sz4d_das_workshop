@@ -15,28 +15,29 @@ The event will take place at the Tulane River & Coastal Center, located one bloc
 |------------------|-------|
 |  8:30 -  9:00 AM | Welcome coffee |
 |  9:00 -  9:30 AM | Introduction from the Conveners |
-|  9:30 -  9:45 AM | Getting set up with the Computing Environment - Yiyu Ni|
+|  9:30 -  9:45 AM | Getting set up with the Computing Environment - Yiyu Ni |
 |||
-| Hands on Session | DAS in a Subduction Zone Accretionary Prism: the Ocean Observatory Initiative (OOI) Regional Cabled Array, OR |
+| | **Hands on Session: AS in a Subduction Zone Accretionary Prism: the Ocean Observatory Initiative (OOI) Regional Cabled Array, OR** |
 |  9:45 - 10:00 AM | Reading and plotting DAS data and earthquake signals - Zoe Krauss |
 | 10:00 - 10:15 AM | Low-frequency oceanic waves, marine mammals, noise sources - Ethan Williams |
 |||
-| 10:15 - 10:30 AM | Coffee Break |
+| 10:15 - 10:30 AM | **Coffee Break** |
 |||
-| Hands on Session | DAS at a Subduction Zone Volcano: Mount Rainier, WA |
+| | **Hands on Session: DAS at a Subduction Zone Volcano: Mount Rainier, WA** |
 | 10:30 - 11:00 AM | Template matching and seismic detection - Verónica Gaete-Elgueta |
 | 11:00 - 11:30 AM | Environmental noise correlation - Manuela Köpfli |
 |||
-| Hands on Session | DAS in a Subduction Zone Forearc Basin: Cook Inlet, AK |
+| | **Hands on Session: DAS in a Subduction Zone Forearc Basin: Cook Inlet, AK** |
 | 11:30 - 12:00 PM | Self-supervised machine learning and earthquake monitoring - Qibin Shi |
 | 12:00 - 12:30 PM | Wavefield reconstruction with machine learning - Yiyu Ni |
 |||
-| 12:30 PM | Workshop adjourned |
+| 12:30 PM | **Workshop adjourned** |
 
 ## Organizers 
 - Verónica Gaete-Elgueta (University of Washington) 
 - Manuela Köpfli (University of Washington)
-- Qibin Shi (Rice University), Zoe Krauss (University of Washington)
+- Qibin Shi (Rice University)
+- Zoe Krauss (University of Washington)
 - Yiyu Ni (University of Washington) 
 - Ethan Williams (UC Santa Cruz)
 - Brad Lipovsky (University of Washington)
