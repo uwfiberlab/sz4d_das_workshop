@@ -4,7 +4,7 @@
 format: jb-book
 root: intro
 chapters:
+- file: README.md
 - file: notebooks/1_first_nb
 - file: notebooks/2_second_nb
 - file: notebooks/3_third_nb
-- file: conclusion

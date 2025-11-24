@@ -2,8 +2,8 @@
 # Learn more at https://jupyterbook.org/customize/config.html
 
 title: Template Jupyter-book
-author: Loïc Bachelot
-logo: Crescent_logo.png
+author: UW FiberLab
+logo: fiberlab.png
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html

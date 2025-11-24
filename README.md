@@ -1,32 +1,44 @@
 ![Deployement of book](../../actions/workflows/deploy-book.yml/badge.svg) [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/cascadiaquakes/jupyter-book-template/HEAD?labpath=notebooks%2F)  
-[Link to Jupyter-book template book](https://cascadiaquakes.github.io/jupyter-book-template/)
 
-# jupyter-book-template
+# SZ4D Open DAS Data for Subduction Zone Environments
 
-This repository is aimed to be a template/example to follow on how to make a jupyter-book for CRESCENT with the available resources such as logo
+## Overview
+This workshop aims to introduce participants to publicly available DAS datasets and open-source tools, demonstrate analysis techniques relevant to subduction zone science, foster collaboration and data sharing to enhance reproducibility within the SZ4D community, and build connections among early-career and established researchers.
 
-Requirements are:
-- jupyter-book package  
-- matplotlib  
-- numpy
-Then you will need the different packages for your own notebooks.
+The event will take place at the Tulane River & Coastal Center, located one block south of the Convention Center ([map](https://www.google.com/maps/d/u/1/edit?mid=1UC7Jxo5ibAlLGRE-w5grOP8jwSccRHc&usp=sharing))
 
-Compile: 
-jupyter-book build mybookname/   (replace "mybookname" with the path to the folder containing the _config.yml file)
+- THE BYWATER INSTITUTE
+- 6823 St. Charles Avenue
+- 627 Lindy Boggs Center, New Orleans, LA 70118
+- 504-862-8450
 
-open the _build/html/index.html
+## Agenda
+|       Time       | Event |
+|------------------|-------|
+|  8:30 -  9:00 AM | Welcome coffee |
+|  9:00 -  9:30 AM | Introduction from the Conveners |
+|  9:30 -  9:45 AM | Getting set up with the Computing Environment - Yiyu Ni|
+|||
+| Hands on Session | DAS in a Subduction Zone Accretionary Prism: the Ocean Observatory Initiative (OOI) Regional Cabled Array, OR |
+|  9:45 - 10:00 AM | Reading and plotting DAS data and earthquake signals - Zoe Krauss |
+| 10:00 - 10:15 AM | Low-frequency oceanic waves, marine mammals, noise sources - Ethan Williams |
+|||
+| 10:15 - 10:30 AM | Coffee Break |
+|||
+| Hands on Session | DAS at a Subduction Zone Volcano: Mount Rainier, WA |
+| 10:30 - 11:00 AM | Template matching and seismic detection - Verónica Gaete-Elgueta |
+| 11:00 - 11:30 AM | Environmental noise correlation - Manuela Köpfli |
+|||
+| Hands on Session | DAS in a Subduction Zone Forearc Basin: Cook Inlet, AK |
+| 11:30 - 12:00 PM | Self-supervised machine learning and earthquake monitoring - Qibin Shi |
+| 12:00 - 12:30 PM | Wavefield reconstruction with machine learning - Yiyu Ni |
+|||
+| 12:30 PM | Workshop adjourned |
 
-More documentation on jupyter-book  
-https://jupyterbook.org/en/stable/intro.html
-
-# How to use this template
-
-1. You should use this template to help you get started with jupyter-book. When creating a new repository, create it from template and select this one
-2. Change this readme to reflect what your project actually is
-3. In the readme, change the links of the build icon as well as the link to the deployed book
-4. The _toc.yml is the table of content, this is where you define the structure of the book (sections, chapters etc...) More informations: https://jupyterbook.org/en/stable/structure/toc.html
-5. The _config.yml should require minimal modifications: title, author. More information: https://jupyterbook.org/en/stable/customize/config.html
-6. The notebook folder currently contains simple notebooks example, replace it by yours.
-7. In the root folder, you have the intro.md and conclusion.md, modify this to fit your project
-8. In the conclusion.md, there is an example on how to use reference and add the bibliography from the .bib file. more documentation: https://jupyterbook.org/en/stable/content/citations.html 
-9. If you are using specific library and you want people to easily be able to run your notebooks, feel free to add packages to the requirement.txt. Currently the execution of the notebooks is blocked in the book, even at the compilation this is not needed to add all packages in it if the notebook are for demo purposes only and not meant to be used. Keep the requirements.txt in the root folder with at least jupyter-book for the automatic deployment.
+## Organizers 
+- Verónica Gaete-Elgueta (University of Washington) 
+- Manuela Köpfli (University of Washington)
+- Qibin Shi (Rice University), Zoe Krauss (University of Washington)
+- Yiyu Ni (University of Washington) 
+- Ethan Williams (UC Santa Cruz)
+- Brad Lipovsky (University of Washington)
