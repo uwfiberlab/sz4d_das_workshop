@@ -15,10 +15,10 @@ The event will take place at the Tulane River & Coastal Center, located one bloc
 |------------------|-------|
 |  8:30 -  9:00 AM | Welcome coffee |
 |  9:00 -  9:30 AM | Introduction from the Conveners |
-|  9:30 -  9:45 AM | Getting set up with the Computing Environment - Yiyu Ni |
+|  9:30 -  9:45 AM | Getting set up with the computing environment - Yiyu Ni |
 |||
 | | **Hands on Session: AS in a Subduction Zone Accretionary Prism: the Ocean Observatory Initiative (OOI) Regional Cabled Array, OR** |
-|  9:45 - 10:00 AM | Reading and plotting DAS data and earthquake signals - Zoe Krauss |
+|  9:45 - 10:00 AM | Reading and plotting DAS data and earthquake signals - Zoe Krauss ([notebook](./notebooks/Zoe/agu_notebook1_2025.ipynb))|
 | 10:00 - 10:15 AM | Low-frequency oceanic waves, marine mammals, noise sources - Ethan Williams |
 |||
 | 10:15 - 10:30 AM | **Coffee Break** |
