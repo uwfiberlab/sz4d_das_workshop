@@ -4,6 +4,6 @@
 format: jb-book
 root: README.md
 chapters:
-- file: notebooks/Zoe/agu_notebook1_2025
+- file: notebooks/zoe/agu_notebook1_2025
 - file: notebooks/2_second_nb
 - file: notebooks/3_third_nb
