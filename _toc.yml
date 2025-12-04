@@ -6,4 +6,4 @@ root: README.md
 chapters:
 - file: notebooks/zoe/agu_notebook1_2025
 - file: notebooks/manuela/noisepy_seadasn_AGU2025
-- file: notebooks/3_third_nb
+- file: notebooks/yiyu/tutorial_SHRED_KKFLS
