@@ -17,7 +17,7 @@ The event will take place at the Tulane River & Coastal Center, located one bloc
 |  9:00 -  9:30 AM | Introduction from the Conveners |
 |  9:30 -  9:45 AM | Getting set up with the computing environment - Yiyu Ni |
 |||
-| | **Hands on Session: AS in a Subduction Zone Accretionary Prism: the Ocean Observatory Initiative (OOI) Regional Cabled Array, OR** |
+| | **Hands on Session: AS in a Subduction Zone Accretionary Prism: the Ocean Observatory Initiative Regional Cabled Array, OR** |
 |  9:45 - 10:00 AM | Reading and plotting DAS data and earthquake signals - Zoe Krauss ([notebook](./notebooks/zoe/agu_notebook1_2025.ipynb))|
 | 10:00 - 10:15 AM | Low-frequency oceanic waves, marine mammals, noise sources - Ethan Williams |
 |||
@@ -29,7 +29,7 @@ The event will take place at the Tulane River & Coastal Center, located one bloc
 |||
 | | **Hands on Session: DAS in a Subduction Zone Forearc Basin: Cook Inlet, AK** |
 | 11:30 - 12:00 PM | Self-supervised machine learning and earthquake monitoring - Qibin Shi |
-| 12:00 - 12:30 PM | Wavefield reconstruction with machine learning - Yiyu Ni |
+| 12:00 - 12:30 PM | Wavefield reconstruction with machine learning - Yiyu Ni ([notebook](./notebooks/yiyu/tutorial_SHRED_KKFLS.ipynb)) |
 |||
 | 12:30 PM | **Workshop adjourned** |
 
