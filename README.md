@@ -10,15 +10,6 @@ The event will take place at the Tulane River & Coastal Center, located one bloc
 - 627 Lindy Boggs Center, New Orleans, LA 70118
 - 504-862-8450
 
-## Get Started
-To get started, please download and run the scripts in your GeoLab environment. You can download the scripts using the command below:
-
-```bash
-wget https://raw.githubusercontent.com/uwfiberlab/sz4d_das_workshop/refs/heads/main/configure.sh
-chmod +x configure.sh
-./configure.sh
-```
-
 ## Agenda
 |       Time       | Event |
 |------------------|-------|
@@ -50,3 +41,12 @@ chmod +x configure.sh
 - Yiyu Ni (University of Washington) 
 - Ethan Williams (UC Santa Cruz)
 - Brad Lipovsky (University of Washington)
+
+## Get Started
+To get started, please download and run the scripts in your GeoLab environment. You can download the scripts using the command below:
+
+```bash
+wget https://raw.githubusercontent.com/uwfiberlab/sz4d_das_workshop/refs/heads/main/configure.sh
+chmod +x configure.sh
+./configure.sh
+```
