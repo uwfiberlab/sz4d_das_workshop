@@ -106,28 +106,26 @@ def yday(t_utc: datetime) -> int:
     """
     return t_utc.timetuple().tm_yday
 
-def path_for_time(t_utc: datetime) -> str:
+def path_for_time(t_evt):
     """
-    Build the full file path for Mount Rainier 50 Hz data using base_year_dir.
-    ...
+    Build path to a DAS file in:
+    /data/data2/workshop/data/veronica/rainier_50Hz_YYYY-MM-DD_HH.MM.00_UTC.h5
     """
-    if base_year_dir is None:
-        raise ValueError(
-            "base_year_dir is not set. Call set_base_year_dir(...) in your notebook "
-            "before using path_for_time()."
-        )
 
-    # Round down to the nearest minute
-    t0 = t_utc.replace(second=0, microsecond=0)
+    # make sure we have a timezone-aware datetime
+    if isinstance(t_evt, str):
+        t_evt = datetime.strptime(
+            t_evt.replace("_", " ").replace(".", ":"),
+            "%Y-%m-%d %H:%M:%S"
+        ).replace(tzinfo=timezone.utc)
+    else:
+        t_evt = pd.Timestamp(t_evt).to_pydatetime().replace(tzinfo=timezone.utc)
 
-    # Subdirectory is the Julian day (e.g., '235')
-    day_dir = os.path.join(base_year_dir, f"{yday(t0):03d}")
+    # floor to the start of the minute for the file name
+    t_file = t_evt.replace(second=0, microsecond=0)
 
-    # File name with format YYYY-MM-DD_HH.MM
-    filename = f"rainier_50Hz_{t0.strftime('%Y-%m-%d_%H.%M')}.00_UTC.h5"
-
-    return os.path.join(day_dir, filename)
-
+    fname = f"rainier_50Hz_{t_file.strftime('%Y-%m-%d_%H.%M.%S')}_UTC.h5"
+    return os.path.join(base_year_dir, fname)
 
 
 def build_file_list_julian(start_str: str, end_str: str) -> List[str]:
@@ -193,8 +191,8 @@ def compute_correlations(template, data_filt, samples_per_file, channel_number):
             raise ValueError(f"Channel mismatch: template channels = {template.shape[1]}, data_filt channels = {data_filt.shape[1]}")
 
         corrs = window_and_correlate(template, data_filt)
-        print(f"corrs.size: {corrs.size}, expected size: {samples_per_file * template.shape[1]}")
-        print(f"template.shape: {template.shape}, data_filt.shape: {data_filt.shape}")
+        #print(f"corrs.size: {corrs.size}, expected size: {samples_per_file * template.shape[1]}")
+        #print(f"template.shape: {template.shape}, data_filt.shape: {data_filt.shape}")
 
         # Ensure the size of correlations matches the expected size
         expected_size = samples_per_file * template.shape[1]
@@ -207,48 +205,73 @@ def compute_correlations(template, data_filt, samples_per_file, channel_number):
     except Exception as e:
         raise RuntimeError(f"Error computing correlations: {e}")
 
-def process_files_dos(file_list, template_list, chan_min, chan_max, channel_number, samples_per_file, b, a, full_path):
+def process_files_dos(file_list, template_list, chan_min, chan_max,
+                      channel_number, samples_per_file, b, a, full_path):
     """
-    This fuction calculate the correlation between the template with data filt
-    the correlation is the size of the template.
-    
-    The loop is opening 1 file from file_list and correlating them with all templates saved on template list
-    Next it is doing the same but the next file in file_list
-    
-    
+    This function calculates the correlation between the templates and the filtered data.
+    The correlation length is the size of the template.
+
+    The loop opens one file from file_list and correlates it with all templates
+    saved in template_list. Then it moves on to the next file in file_list and
+    repeats the process.
     """
-    
-    #start_time = time.perf_counter()
-    
-    for i, file in tqdm(enumerate(file_list)):
-        for j, tem in tqdm(enumerate(template_list)):
+
+    total_pairs = len(file_list) * len(template_list)
+    done = 0
+    pair_index = 0   # 👈 aquí inicializas el contador de pares
+
+    if total_pairs == 0:
+        print("[matching] no file/template pairs to process")
+        return
+
+    #print(f"[matching] processing {total_pairs} (file, template) pairs...")
+
+    for i, file in enumerate(file_list):
+        for j, tem in enumerate(template_list):
+            pair_index += 1  # 👈 cuenta este par (file, template)
+
             try:
                 # Load data
                 raw_template, raw_data, timestamps = loading_data(file, tem, chan_min, chan_max)
-                
+
                 # Filter
                 data_filt = filter_data(raw_data, b, a)
-                template  = filter_data(raw_template,b,a)
-                
+                template  = filter_data(raw_template, b, a)
+
                 # Compute correlations
                 corrs3 = compute_correlations(template, data_filt, samples_per_file, channel_number)
-                
-                # output folder for correlations, based on the name of the template
-                folder_name_parts = os.path.splitext(os.path.basename(tem))[0].split('_')[0:2]
-                folder_name = '_'.join(folder_name_parts)
-                folder_output = os.path.join(full_path, folder_name)
-                
-                # create it if does not exist
-                if not os.path.exists(folder_output):
-                    os.mkdir(folder_output)
-                
-                # Saved correlations values
-                outfile_name = os.path.join(folder_output, f'corrs_{i}_.npy')
-                np.save(outfile_name, corrs3)
-                #print(f"Saved: {outfile_name}")
+
+                # ======= DEBUG SOLO CADA 50 PARES =======
+                if pair_index % 50 == 0:
+                    #print(f"\n[debug] pair {pair_index}: template.shape={template.shape}, "
+                          #f"data_filt.shape={data_filt.shape}, corrs.size={corrs3.size}")
+                # ========================================
+
+                # Output folder for correlations, based on template name
+                    folder_name_parts = os.path.splitext(os.path.basename(tem))[0].split('_')[0:2]
+                    folder_name = '_'.join(folder_name_parts)
+                    folder_output = os.path.join(full_path, folder_name)
+                    os.makedirs(folder_output, exist_ok=True)
+
+                # Save correlation values
+                    outfile_name = os.path.join(folder_output, f"corrs_{i}_.npy")
+                    np.save(outfile_name, corrs3)
+
             except Exception as e:
-                print(f"Error processing file {file} with template {tem}: {e}. Skipping this file and moving to the next template.")
-                continue
+                print(f"\nError processing file {file} with template {tem}: {e}. Skipping this pair.")
+
+            # progreso “bonito” sin muchas líneas
+            done += 1
+            if done % 10 == 0 or done == total_pairs:
+                frac = done / total_pairs
+                print(f"\r[matching] progress: {done}/{total_pairs} pairs ({frac:.1%})",
+                      end="", flush=True)
+
+    print()  # salto de línea al final
+    print("[matching] finished.")
+
+
+
 
     #end_time = time.perf_counter()
     #execution_time = end_time - start_time
