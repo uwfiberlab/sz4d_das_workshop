@@ -1,9 +1,7 @@
 #!/bin/bash
 
-wget https://github.com/uwfiberlab/sz4d_das_workshop/archive/refs/heads/main.zip
-unzip main.zip
-rm main.zip
-cd sz4d_das_workshop-main
+git clone --depth=1 https://github.com/uwfiberlab/sz4d_das_workshop.git
+cd sz4d_das_workshop
 
 conda create --name workshop python=3.10 h5py scipy numpy pandas matplotlib pytorch-cpu -y
 conda activate workshop
