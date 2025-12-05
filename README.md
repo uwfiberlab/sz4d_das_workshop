@@ -24,7 +24,7 @@ The event will take place at the Tulane River & Coastal Center, located one bloc
 | 10:15 - 10:30 AM | **Coffee Break** |
 |||
 | | **Hands on Session: DAS at a Subduction Zone Volcano: Mount Rainier, WA** |
-| 10:30 - 11:00 AM | Template matching and seismic detection - Verónica Gaete-Elgueta |
+| 10:30 - 11:00 AM | Template matching and seismic detection - Verónica Gaete-Elgueta ([notebook](./notebooks/veronica/template-matching/main_template_matching.ipynb)) |
 | 11:00 - 11:30 AM | Environmental noise correlation - Manuela Köpfli ([notebook](./notebooks/manuela/noisepy_seadasn_AGU2025.ipynb)) |
 |||
 | | **Hands on Session: DAS in a Subduction Zone Forearc Basin: Cook Inlet, AK** |
