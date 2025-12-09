@@ -5,7 +5,7 @@ cd sz4d_das_workshop
 
 conda create --name workshop python=3.10 h5py scipy numpy pandas matplotlib pytorch-cpu -y
 conda activate workshop
-pip install noisepy-seis ipykernel tqdm
+pip install noisepy-seis ipykernel tqdm ELEP joblib seisbench
 python -m ipykernel install --user --name=workshop
 
 # copying DAS data from our S3 bucket. Should take about 2-4 minutes to complete.

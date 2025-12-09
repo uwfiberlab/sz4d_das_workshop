@@ -5,5 +5,7 @@ format: jb-book
 root: README.md
 chapters:
 - file: notebooks/zoe/agu_notebook1_2025
-- file: notebooks/manuela/noisepy_seadasn_AGU2025
 - file: notebooks/yiyu/tutorial_SHRED_KKFLS
+- file: notebooks/veronica/template-matching/main_template_matching
+- file: notebooks/qibin/denoise_pick_assoc
+- file: notebooks/manuela/noisepy_seadasn_AGU2025

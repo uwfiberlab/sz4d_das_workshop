@@ -14,22 +14,20 @@ The event will take place at the Tulane River & Coastal Center, located one bloc
 |       Time       | Event |
 |------------------|-------|
 |  8:30 -  9:00 AM | Welcome coffee |
-|  9:00 -  9:30 AM | Introduction from the Conveners |
-|  9:30 -  9:45 AM | Getting set up with the computing environment - Yiyu Ni |
-|||
-| | **Hands on Session: DAS in a Subduction Zone Accretionary Prism: the Ocean Observatory Initiative Regional Cabled Array, OR** |
-|  9:45 - 10:00 AM | Reading and plotting DAS data and earthquake signals - Zoe Krauss ([notebook](./notebooks/zoe/agu_notebook1_2025.ipynb))|
-| 10:00 - 10:15 AM | Low-frequency oceanic waves, marine mammals, noise sources - Ethan Williams |
-|||
-| 10:15 - 10:30 AM | **Coffee Break** |
-|||
-| | **Hands on Session: DAS at a Subduction Zone Volcano: Mount Rainier, WA** |
-| 10:30 - 11:00 AM | Template matching and seismic detection - Verónica Gaete-Elgueta ([notebook](./notebooks/veronica/template-matching/main_template_matching.ipynb)) |
-| 11:00 - 11:30 AM | Environmental noise correlation - Manuela Köpfli ([notebook](./notebooks/manuela/noisepy_seadasn_AGU2025.ipynb)) |
+|  9:00 -  9:20 AM | Introduction from the Conveners |
+|  9:20 -  9:35 AM | Getting set up with the computing environment - Yiyu Ni |
 |||
 | | **Hands on Session: DAS in a Subduction Zone Forearc Basin: Cook Inlet, AK** |
-| 11:30 - 12:00 PM | Self-supervised machine learning and earthquake monitoring - Qibin Shi |
-| 12:00 - 12:30 PM | Wavefield reconstruction with machine learning - Yiyu Ni ([notebook](./notebooks/yiyu/tutorial_SHRED_KKFLS.ipynb)) |
+|  9:35 -  9:50 AM | Reading and plotting DAS data and earthquake signals - Zoe Krauss ([notebook](./notebooks/zoe/agu_notebook1_2025.ipynb))|
+|  9:50 - 10:20 AM | Wavefield reconstruction with machine learning - Yiyu Ni ([notebook](./notebooks/yiyu/tutorial_SHRED_KKFLS.ipynb)) |
+| 10:20 - 10:35 AM | **Coffee Break** |
+| | **Hands on Session: DAS at a Subduction Zone Volcano: Mount Rainier, WA** |
+| 10:35 - 11:05 AM | Template matching and seismic detection - Verónica Gaete-Elgueta ([notebook](./notebooks/veronica/template-matching/main_template_matching.ipynb)) |
+| | **Hands on Session: DAS in a Subduction Zone Accretionary Prism: the Ocean Observatory Initiative Regional Cabled Array, OR** |
+| 11:05 - 11:35 AM | Low-frequency oceanic waves, marine mammals, noise sources - Ethan Williams |
+| 11:35 - 12:05 PM | Self-supervised machine learning and earthquake monitoring - Qibin Shi ([notebook](./notebooks/qibin/denoise_pick_assoc.ipynb)) |
+| | **Hands on Session: DAS in Subduction Zone in Urban Areas, Seattle, WA** |
+| 12:05 - 12:30 PM | Environmental noise correlation - Manuela Köpfli ([notebook](./notebooks/manuela/noisepy_seadasn_AGU2025.ipynb)) |
 |||
 | 12:30 PM | **Workshop adjourned** |
 
