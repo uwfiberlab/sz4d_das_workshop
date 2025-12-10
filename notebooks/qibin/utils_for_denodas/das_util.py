@@ -2,6 +2,7 @@ import torch
 import h5py
 import numpy as np
 from joblib import Parallel, delayed
+import gc
 
 from ELEP.elep.ensemble_coherence import ensemble_semblance
 
@@ -131,6 +132,7 @@ def apply_elep(DAS_data, list_models, fs, paras_semblance, device):
     mmax = np.max(np.abs(crap2), axis=-1, keepdims=True)
     data_max = np.divide(crap2 , mmax,out=np.zeros_like(crap2), where=mmax!=0)
     del bigS
+    gc.collect()
     
     # data to tensor
     data_tt = torch.from_numpy(data_max).to(device, dtype=torch.float32)
@@ -149,6 +151,9 @@ def apply_elep(DAS_data, list_models, fs, paras_semblance, device):
     smb_peak[:,1,:] =np.array(Parallel(n_jobs=1)(delayed(process_p)(ista,paras_semblance,batch_pred_S,0,fs) 
                                                     for ista in range(nsta)))
     
+    del data_tt, batch_pred_P, batch_pred_S, crap2, data_std, data_max, mmax
+    gc.collect()
+
     return smb_peak
 
 
