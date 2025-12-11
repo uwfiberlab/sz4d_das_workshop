@@ -50,3 +50,5 @@ wget https://raw.githubusercontent.com/uwfiberlab/sz4d_das_workshop/refs/heads/m
 chmod +x configure.sh
 ./configure.sh
 ```
+
+Wait until the configuration script finishes, then navigate into sz4d_das_workshop -> notebooks, and select the session notebook. When running the notebook, select the **workshop** kernel.
