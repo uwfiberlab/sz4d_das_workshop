@@ -18,14 +18,14 @@ The event will take place at the Tulane River & Coastal Center, located one bloc
 |  9:20 -  9:35 AM | Getting set up with the computing environment - Yiyu Ni |
 |||
 | | **Hands on Session: DAS in a Subduction Zone Forearc Basin: Cook Inlet, AK** |
-|  9:35 -  9:50 AM | Reading and plotting DAS data and earthquake signals - Zoe Krauss ([notebook](./notebooks/session1/agu_notebook1_2025.ipynb))|
-|  9:50 - 10:20 AM | Wavefield reconstruction with machine learning - Yiyu Ni ([notebook](./notebooks/session2/tutorial_SHRED_KKFLS.ipynb)) |
+|  9:35 -  9:50 AM | Reading and plotting DAS data and earthquake signals - Zoe Krauss ([notebook](./notebooks/session1/eqplotting_cidas_AGU2025.ipynb))|
+|  9:50 - 10:20 AM | Wavefield reconstruction with machine learning - Yiyu Ni ([notebook](./notebooks/session2/wavefield_cidas_AGU2025.ipynb)) |
 | 10:20 - 10:35 AM | **Coffee Break** |
 | | **Hands on Session: DAS at a Subduction Zone Volcano: Mount Rainier, WA** |
-| 10:35 - 11:05 AM | Template matching and seismic detection - Verónica Gaete-Elgueta ([notebook](./notebooks/session3/template-matching/main_template_matching.ipynb)) |
+| 10:35 - 11:05 AM | Template matching and seismic detection - Verónica Gaete-Elgueta ([notebook](./notebooks/session3/template-matching/main_template_matching_moradas_AGU2025.ipynb)) |
 | | **Hands on Session: DAS in a Subduction Zone Accretionary Prism: the Ocean Observatory Initiative Regional Cabled Array, OR** |
 | 11:05 - 11:35 AM | Low-frequency oceanic waves, marine mammals, noise sources - Ethan Williams |
-| 11:35 - 12:05 PM | Self-supervised machine learning and earthquake monitoring - Qibin Shi ([notebook](./notebooks/session5/denoise_pick_assoc.ipynb)) |
+| 11:35 - 12:05 PM | Self-supervised machine learning and earthquake monitoring - Qibin Shi ([notebook](./notebooks/session5/denoise_pick_ooidas_AGU2025.ipynb)) |
 | | **Hands on Session: DAS in Subduction Zone in Urban Areas, Seattle, WA** |
 | 12:05 - 12:30 PM | Environmental noise correlation - Manuela Köpfli ([notebook](./notebooks/session6/noisepy_seadasn_AGU2025.ipynb)) |
 |||

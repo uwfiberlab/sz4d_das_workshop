@@ -4,8 +4,8 @@
 format: jb-book
 root: README.md
 chapters:
-- file: notebooks/session1/agu_notebook1_2025
-- file: notebooks/session2/tutorial_SHRED_KKFLS
-- file: notebooks/session3/template-matching/main_template_matching
-- file: notebooks/session5/denoise_pick_assoc
+- file: notebooks/session1/eqplotting_cidas_AGU2025
+- file: notebooks/session2/wavefield_cidas_AGU2025
+- file: notebooks/session3/template-matching/main_template_matching_moradas_AGU2025
+- file: notebooks/session5/denoise_pick_ooidas_AGU2025
 - file: notebooks/session6/noisepy_seadasn_AGU2025
