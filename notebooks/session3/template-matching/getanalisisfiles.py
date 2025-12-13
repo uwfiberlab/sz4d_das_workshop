@@ -218,17 +218,17 @@ def process_files_dos(file_list, template_list, chan_min, chan_max,
 
     total_pairs = len(file_list) * len(template_list)
     done = 0
-    pair_index = 0   # 👈 aquí inicializas el contador de pares
+    pair_index = 0
 
     if total_pairs == 0:
         print("[matching] no file/template pairs to process")
         return
 
-    #print(f"[matching] processing {total_pairs} (file, template) pairs...")
+    # print(f"[matching] processing {total_pairs} (file, template) pairs...")
 
     for i, file in enumerate(file_list):
         for j, tem in enumerate(template_list):
-            pair_index += 1  # 👈 cuenta este par (file, template)
+            pair_index += 1
 
             try:
                 # Load data
@@ -241,34 +241,34 @@ def process_files_dos(file_list, template_list, chan_min, chan_max,
                 # Compute correlations
                 corrs3 = compute_correlations(template, data_filt, samples_per_file, channel_number)
 
-                # ======= DEBUG SOLO CADA 50 PARES =======
-                if pair_index % 50 == 0:
-                    #print(f"\n[debug] pair {pair_index}: template.shape={template.shape}, "
-                          #f"data_filt.shape={data_filt.shape}, corrs.size={corrs3.size}")
-                # ========================================
+                # --- optional debug every 50 pairs ---
+                # if pair_index % 50 == 0:
+                #     print(f"\n[debug] pair {pair_index}: template.shape={template.shape}, "
+                #           f"data_filt.shape={data_filt.shape}, corrs.size={corrs3.size}")
 
                 # Output folder for correlations, based on template name
-                    folder_name_parts = os.path.splitext(os.path.basename(tem))[0].split('_')[0:2]
-                    folder_name = '_'.join(folder_name_parts)
-                    folder_output = os.path.join(full_path, folder_name)
-                    os.makedirs(folder_output, exist_ok=True)
+                folder_name_parts = os.path.splitext(os.path.basename(tem))[0].split('_')[0:2]
+                folder_name = '_'.join(folder_name_parts)
+                folder_output = os.path.join(full_path, folder_name)
+                os.makedirs(folder_output, exist_ok=True)
 
-                # Save correlation values
-                    outfile_name = os.path.join(folder_output, f"corrs_{i}_.npy")
-                    np.save(outfile_name, corrs3)
+                # Save correlation values (for EVERY successful pair)
+                outfile_name = os.path.join(folder_output, f"corrs_{i}_.npy")
+                np.save(outfile_name, corrs3)
 
             except Exception as e:
                 print(f"\nError processing file {file} with template {tem}: {e}. Skipping this pair.")
 
-            # progreso “bonito” sin muchas líneas
+            # nice compact progress
             done += 1
             if done % 10 == 0 or done == total_pairs:
                 frac = done / total_pairs
                 print(f"\r[matching] progress: {done}/{total_pairs} pairs ({frac:.1%})",
                       end="", flush=True)
 
-    print()  # salto de línea al final
+    print()  # newline at the end
     print("[matching] finished.")
+
 
 
 
