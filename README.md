@@ -5,9 +5,7 @@ This half-day mini-workshop aims to introduce participants to publicly available
 
 The event will take place at the Tulane River & Coastal Center, located one block south of the Convention Center ([map](https://www.google.com/maps/d/u/1/edit?mid=1UC7Jxo5ibAlLGRE-w5grOP8jwSccRHc&usp=sharing))
 
-- THE BYWATER INSTITUTE
-- 6823 St. Charles Avenue
-- 627 Lindy Boggs Center, New Orleans, LA 70118
+- 1370 Port of New Orleans Pl, New Orleans, LA 70130
 - 504-862-8450
 
 ## Agenda
