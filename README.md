@@ -3,10 +3,7 @@
 ## Overview
 This half-day mini-workshop aims to introduce participants to publicly available DAS datasets and open-source tools, demonstrate analysis techniques relevant to subduction zone science, foster collaboration and data sharing to enhance reproducibility within the SZ4D community, and build connections among early-career and established researchers.
 
-The event will take place at the Tulane River & Coastal Center, located one block south of the Convention Center ([map](https://www.google.com/maps/d/u/1/edit?mid=1UC7Jxo5ibAlLGRE-w5grOP8jwSccRHc&usp=sharing))
-
-- 1370 Port of New Orleans Pl, New Orleans, LA 70130
-- 504-862-8450
+The event will take place at the Tulane River & Coastal Center (1370 Port of New Orleans Pl, New Orleans, LA 70130), located one block south of the Convention Center ([map](https://www.google.com/maps/d/u/1/edit?mid=1UC7Jxo5ibAlLGRE-w5grOP8jwSccRHc&usp=sharing))
 
 ## Agenda
 |       Time       | Event |
@@ -41,7 +38,7 @@ The event will take place at the Tulane River & Coastal Center, located one bloc
 ## Get Started
 We will use the EarthScope GeoLab computing environment for this workshop. If you do not have access to GeoLab, please sign up at https://www.earthscope.org/data/geolab/.
 
-When launching a GeoLab Jupyter hub, please select the "GeoLab" environment. After launching the jupyter hub, copy and run the scripts below in a terminal. 
+When launching a GeoLab Jupyter hub, please select the "GeoLab" environment. Please use an allocation with more than 7 GB RAM. After launching the jupyter hub, copy and run the scripts below in a terminal. 
 
 ```bash
 wget https://raw.githubusercontent.com/uwfiberlab/sz4d_das_workshop/refs/heads/main/configure.sh -O configure.sh
