@@ -43,7 +43,7 @@ The event will take place at the Tulane River & Coastal Center, located one bloc
 ## Get Started
 We will use the EarthScope GeoLab computing environment for this workshop. If you do not have access to GeoLab, please sign up at https://www.earthscope.org/data/geolab/.
 
-When launching a GeoLab Jupyter hub, please select the "GeoLab" environment and the "7 GB RAM, ~0.9 CPUs" resource allocation option. After launching the jupyter hub, copy and run the scripts below in a terminal. 
+When launching a GeoLab Jupyter hub, please select the "GeoLab" environment. After launching the jupyter hub, copy and run the scripts below in a terminal. 
 
 ```bash
 wget https://raw.githubusercontent.com/uwfiberlab/sz4d_das_workshop/refs/heads/main/configure.sh -O configure.sh
