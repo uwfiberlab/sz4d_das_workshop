@@ -7,6 +7,6 @@ chapters:
 - file: notebooks/session1/eqplotting_cidas_AGU2025
 - file: notebooks/session2/wavefield_cidas_AGU2025
 - file: notebooks/session3/template-matching/main_template_matching_moradas_AGU2025
-- file: notebooks/session4/lowfreq_oceanic_waves_AGU2025
+- file: notebooks/session4/ooi_ocean_waves
 - file: notebooks/session5/denoise_pick_ooidas_AGU2025
 - file: notebooks/session6/noisepy_seadasn_AGU2025
