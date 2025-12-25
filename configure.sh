@@ -9,5 +9,5 @@ conda activate workshop
 pip install noisepy-seis ipykernel tqdm ELEP joblib seisbench geopy
 python -m ipykernel install --user --name=workshop
 
-# copying DAS data from our S3 bucket. Should take about 2-4 minutes to complete. 
-aws s3 cp --recursive --no-sign-request s3://2025-sz4d-das-workshop/ ./
+# copying DAS data from our S3 bucket.
+aws s3 cp --recursive --no-sign-request s3://shared/niyiyu/sz4d-das-workshop/ ./ --endpoint https://dasway.ess.washington.edu
