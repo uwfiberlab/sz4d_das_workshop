@@ -1,5 +1,7 @@
 # SZ4D Open DAS Data for Subduction Zone Environments
 
+https://www.sz4d.org/events/agu-mini-workshop-das-subduction-zones
+
 ## Overview
 This half-day mini-workshop aims to introduce participants to publicly available DAS datasets and open-source tools, demonstrate analysis techniques relevant to subduction zone science, foster collaboration and data sharing to enhance reproducibility within the SZ4D community, and build connections among early-career and established researchers.
 
