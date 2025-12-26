@@ -3,15 +3,16 @@
 
 format: jb-book
 root: README.md
-- caption: DAS in a Subduction Zone Forearc Basin: Cook Inlet, AK
+parts: 
+- caption: DAS in a Subduction Zone Forearc Basin - Cook Inlet, AK
   chapters:
   - file: notebooks/session1/eqplotting_cidas_AGU2025
   - file: notebooks/session2/wavefield_cidas_AGU2025
-- caption: DAS at a Subduction Zone Volcano: Mount Rainier, WA
+- caption: DAS at a Subduction Zone Volcano - Mount Rainier, WA
   chapters:
   - file: notebooks/session3/template-matching/main_template_matching_moradas_AGU2025
   - file: notebooks/session4/ooi_ocean_waves
-- caption: DAS in a Subduction Zone Accretionary Prism: the Ocean Observatory Initiative Regional Cabled Array, OR
+- caption: DAS in a Subduction Zone Accretionary Prism - the Ocean Observatory Initiative Regional Cabled Array, OR
   chapters:
   - file: notebooks/session5/denoise_pick_ooidas_AGU2025
 - caption: DAS in Subduction Zone in Urban Areas, Seattle, WA
